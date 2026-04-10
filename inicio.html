@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link rel="icon" type="image/x-icon" href="img/nxrtech.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- BASE: Variables globales y reset -->
@@ -23,6 +25,7 @@
     <link rel="stylesheet" href="css-team/christian-diaz.css">
     <link rel="stylesheet" href="css-team/xiomara-solis.css">
 </head>
+
 <body>
 
     <!-- =============================================
@@ -83,7 +86,8 @@
              ARCHIVO CSS: css-team/maykol-calle.css
              ============================================= -->
         <section id="mc-soluciones">
-            <p style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
+            <p
+                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
                 [ Maykol Calle — Soluciones Tecnológicas ]<br>Agrega tu HTML aquí · Estilos en css-team/maykol-calle.css
             </p>
         </section>
@@ -94,9 +98,79 @@
              ARCHIVO CSS: css-team/joel-saldana.css
              ============================================= -->
         <section id="js-productos">
-            <p style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
-                [ Joel Saldaña — Productos Destacados ]<br>Agrega tu HTML aquí · Estilos en css-team/joel-saldana.css
-            </p>
+            <div class="container">
+
+                <div class="js-productos-header">
+                    <div class="js-badge">
+                        <i class="fa-solid fa-star"></i>
+                        <span>LO MÁS VENDIDO</span>
+                    </div>
+                    <h2 class="js-productos-titulo">Nuestros Productos Destacados</h2>
+                    <p class="js-productos-subtitulo">Descubre nuestra selección de los mejores productos tecnológicos
+                        del momento.</p>
+                </div>
+
+                <div class="js-productos-grid">
+
+                    <div class="js-producto">
+                        <div class="js-producto-img-wrapper">
+                            <img src="img/producto-telefono.jpg" alt="SmartPhone Pro X" class="js-producto-img">
+                        </div>
+                        <div class="js-producto-contenido">
+                            <h5 class="js-producto-categoria">Teléfonos Móviles</h5>
+                            <h3 class="js-producto-titulo">SmartPhone Pro X</h3>
+                            <p class="js-producto-descripcion">Pantalla AMOLED 6.7", cámara 108MP, batería 5000mAh y
+                                rendimiento excepcional.</p>
+                            <span class="js-producto-precio">S/ 1,299.00</span>
+                            <div class="js-producto-botones">
+                                <a href="#js-contacto" class="btn-primario">Comprar</a>
+                                <a href="#js-detalle-telefono" class="btn-secundario">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="js-producto">
+                        <div class="js-producto-img-wrapper">
+                            <img src="img/producto-laptop.jpg" alt="Cloudrapid 360" class="js-producto-img">
+                        </div>
+                        <div class="js-producto-contenido">
+                            <h5 class="js-producto-categoria">Laptops & Computadoras</h5>
+                            <h3 class="js-producto-titulo">Cloudrapid 360</h3>
+                            <p class="js-producto-descripcion">Intel Core i7, 16GB RAM, SSD 512GB, tarjeta gráfica
+                                dedicada para trabajo y gaming.
+                            </p>
+                            <span class="js-producto-precio">S/ 3,499.00</span>
+                            <div class="js-producto-botones">
+                                <a href="#js-contacto" class="btn-primario">Comprar</a>
+                                <a href="#js-detalle-laptop" class="btn-secundario">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="js-producto">
+                        <div class="js-producto-img-wrapper">
+                            <img src="img/producto-rtx.jpg" alt="NVIDIA RTX 5090" class="js-producto-img">
+                        </div>
+                        <div class="js-producto-contenido">
+                            <h5 class="js-producto-categoria">Componentes PC</h5>
+                            <h3 class="js-producto-titulo">NVIDIA RTX 5090</h3>
+                            <p class="js-producto-descripcion">La tarjeta gráfica más potente del mundo. 32GB GDDR7, ray
+                                tracing extremo y rendimiento IA sin limites.</p>
+                            <span class="js-producto-precio">S/ 12,999.00</span>
+                            <div class="js-producto-botones">
+                                <a href="#js-contacto" class="btn-primario">Comprar</a>
+                                <a href="#js-detalle-rtx" class="btn-secundario">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="js-catalogo-btn">
+                    <a href="#js-catalogo" class="btn-primario">Ver Catálogo Completo →</a>
+                </div>
+
+            </div>
         </section>
 
         <!-- =============================================
@@ -105,7 +179,8 @@
              ARCHIVO CSS: css-team/juan-morales.css
              ============================================= -->
         <section id="jm-video">
-            <p style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
+            <p
+                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
                 [ Juan Morales — Video Demostrativo ]<br>Agrega tu HTML aquí · Estilos en css-team/juan-morales.css
             </p>
         </section>
@@ -116,7 +191,8 @@
              ARCHIVO CSS: css-team/christian-diaz.css
              ============================================= -->
         <section id="cd-testimonios">
-            <p style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
+            <p
+                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
                 [ Christian Diaz — Testimonios ]<br>Agrega tu HTML aquí · Estilos en css-team/christian-diaz.css
             </p>
         </section>
@@ -127,7 +203,8 @@
              ARCHIVO CSS: css-team/juan-morales.css
              ============================================= -->
         <section id="jm-contador">
-            <p style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
+            <p
+                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
                 [ Juan Morales — Contador de Logros ]<br>Agrega tu HTML aquí · Estilos en css-team/juan-morales.css
             </p>
         </section>
@@ -138,7 +215,8 @@
              ARCHIVO CSS: css-team/xiomara-solis.css
              ============================================= -->
         <section id="xs-noticias">
-            <p style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
+            <p
+                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
                 [ Xiomara Solis — Noticias / Blog ]<br>Agrega tu HTML aquí · Estilos en css-team/xiomara-solis.css
             </p>
         </section>
@@ -149,8 +227,10 @@
              ARCHIVO CSS: css-team/xiomara-solis.css
              ============================================= -->
         <section id="xs-cta">
-            <p style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
-                [ Xiomara Solis — CTA / Llamada a la Acción ]<br>Agrega tu HTML aquí · Estilos en css-team/xiomara-solis.css
+            <p
+                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
+                [ Xiomara Solis — CTA / Llamada a la Acción ]<br>Agrega tu HTML aquí · Estilos en
+                css-team/xiomara-solis.css
             </p>
         </section>
 
@@ -167,12 +247,16 @@
                 <div class="footer-mapa-info">
                     <h4><i class="fas fa-map-marker-alt"></i> Encuéntranos</h4>
                     <p>Nextech Education Center<br>Lima, Perú<br><br>
-                        <i class="fas fa-clock" style="color:var(--color-acento);margin-right:6px;"></i>Lun - Sab: 9am - 7pm<br>
+                        <i class="fas fa-clock" style="color:var(--color-acento);margin-right:6px;"></i>Lun - Sab: 9am -
+                        7pm<br>
                         <i class="fas fa-phone" style="color:var(--color-acento);margin-right:6px;"></i>+51 999 888 777
                     </p>
                 </div>
                 <div class="footer-mapa-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.807089340955!2d-77.02765046312203!3d-12.125347888167074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81ec97e7907%3A0x18b4e5cf9fd504b9!2sNextech%20Education%20Center!5e0!3m2!1ses-419!2spe!4v1775803092590!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.807089340955!2d-77.02765046312203!3d-12.125347888167074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81ec97e7907%3A0x18b4e5cf9fd504b9!2sNextech%20Education%20Center!5e0!3m2!1ses-419!2spe!4v1775803092590!5m2!1ses-419!2spe"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
@@ -225,7 +309,8 @@
                     <ul>
                         <li><a href="#"><i class="fas fa-map-marker-alt"></i> Lima, Perú</a></li>
                         <li><a href="tel:+51999888777"><i class="fas fa-phone"></i> +51 999 888 777</a></li>
-                        <li><a href="mailto:contacto@nxrtech.com"><i class="fas fa-envelope"></i> contacto@nxrtech.com</a></li>
+                        <li><a href="mailto:contacto@nxrtech.com"><i class="fas fa-envelope"></i>
+                                contacto@nxrtech.com</a></li>
                         <li><a href="#"><i class="fas fa-clock"></i> Lun - Sab: 9am - 7pm</a></li>
                         <li><a href="#"><i class="fab fa-whatsapp"></i> Chat en vivo</a></li>
                     </ul>
@@ -247,4 +332,5 @@
     <script src="js/main.js"></script>
 
 </body>
+
 </html>
