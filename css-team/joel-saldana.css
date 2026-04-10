@@ -1,0 +1,81 @@
+/* ============================================================
+   INTEGRANTE: Joel Saldaña
+   SECCIÓN:    Productos Destacados — id="js-productos"
+   PREFIJO:    js-  (OBLIGATORIO en todas tus clases)
+   ============================================================
+
+   PREFIJO DE CLASES:
+   Usa "js-" en todas tus clases sin excepción.
+   Ejemplo: .js-grid  .js-card  .js-precio  .js-categoria
+   Esto evita conflictos con los estilos de tus compañeros.
+
+   ============================================================
+   DESCRIPCIÓN VISUAL DE LA SECCIÓN:
+   ============================================================
+   - Fondo oscuro (var(--color-fondo-oscuro)), sección de alto
+     contraste que resalta los productos
+   - Encabezado centrado: subtítulo pequeño en azul acento,
+     título grande en blanco, descripción en gris claro
+   - 3 cards en fila, cada una con:
+       · Imagen del producto que ocupa todo el ancho superior
+       · Categoría en azul acento con letras pequeñas en mayúsculas
+       · Nombre del producto en negrita y texto claro
+       · Descripción corta en gris
+       · Precio destacado en azul acento, tamaño grande
+       · Dos botones al pie: uno primario y uno secundario
+   - Hover: la card se eleva, aparece un borde azul y una
+     sombra azulada difusa debajo
+
+   ============================================================
+   RECOMENDACIONES:
+   ============================================================
+   - La card conviene estructurarla con flexbox en columna para
+     que el precio y botones queden siempre al fondo (flex-grow
+     en la descripción empuja el resto hacia abajo)
+   - Para la sombra azul en hover:
+     box-shadow con color rgba basado en var(--color-acento)
+   - Las clases btn-primario y btn-secundario ya están definidas
+     en css/main.css — puedes usarlas directamente
+   - La imagen necesita object-fit: cover para no deformarse
+
+   ============================================================
+   CONTENIDO PARA EL HTML (ponlo en inicio.html):
+   ============================================================
+   Subtítulo badge: "LO MÁS VENDIDO"
+   Título:          "Nuestros Productos Destacados"
+   Descripción:     "Tecnología de primer nivel con garantía
+                     y respaldo de expertos."
+
+   Card 1 — SmartPhone Pro X
+     Imagen:      img/producto-telefono.jpg
+     Categoría:   Teléfonos Móviles
+     Descripción: Pantalla AMOLED 6.7", cámara 108MP, batería 5000mAh.
+     Precio:      S/ 1,299.00
+
+   Card 2 — Cloudrapid 360
+     Imagen:      img/producto-laptop.jpg
+     Categoría:   Laptops & Computadoras
+     Descripción: Intel Core i7, 16GB RAM, SSD 512GB, pantalla FHD 15.6".
+     Precio:      S/ 2,899.00
+
+   Card 3 — NVIDIA RTX 5090
+     Imagen:      img/producto-rtx.jpg
+     Categoría:   Componentes PC
+     Descripción: 32GB GDDR7, ray tracing de última generación
+                  para gaming y creación de contenido.
+     Precio:      S/ 8,499.00
+
+   ============================================================
+   VARIABLES DISPONIBLES (usa solo estas, sin colores directos):
+   ============================================================
+   var(--color-acento)         azul principal
+   var(--color-fondo-oscuro)   fondo de la sección
+   var(--color-fondo-card)     fondo de cada card
+   var(--color-texto-claro)    texto sobre fondo oscuro
+   var(--color-texto-gris)     descripciones
+   var(--color-borde)          bordes sutiles
+   var(--sombra-card)          sombra base de cards
+   var(--fuente-principal)     Poppins
+   var(--radio-borde)          redondeo de esquinas
+   var(--transicion)           animación de hover
+   ============================================================ */

@@ -1,0 +1,82 @@
+/* ============================================================
+   INTEGRANTE: Juan Morales
+   SECCIONES:  Video Demostrativo — id="jm-video"
+               Contador de Logros  — id="jm-contador"
+   PREFIJO:    jm-  (OBLIGATORIO en todas tus clases)
+   ============================================================
+
+   PREFIJO DE CLASES:
+   Usa "jm-" en todas tus clases sin excepción.
+   Ejemplo: .jm-video-wrapper  .jm-contador-grid  .jm-cifra
+   Esto evita conflictos con los estilos de tus compañeros.
+
+   ============================================================
+   DESCRIPCIÓN VISUAL — SECCIÓN VIDEO:
+   ============================================================
+   - Fondo intermedio (var(--color-fondo-medio)), más oscuro que
+     el claro pero no tan oscuro como las otras secciones
+   - Encabezado centrado arriba: subtítulo en azul, título grande,
+     descripción breve
+   - El video está centrado, con un ancho máximo razonable,
+     bordes redondeados y una sombra suave debajo
+   - Debajo del video hay un botón "Ver Catálogo"
+   - En móvil el video ocupa el 100% del ancho
+
+   DESCRIPCIÓN VISUAL — SECCIÓN CONTADOR:
+   ============================================================
+   - Fondo oscuro (var(--color-fondo-oscuro))
+   - 4 bloques en fila, cada uno muestra:
+       · Un número grande en azul acento (ej. 500+)
+       · Una etiqueta descriptiva debajo en gris claro
+   - Los números arrancan en 0 y se animan hasta su valor real
+     al hacer scroll — el JS ya está implementado en js/main.js
+   - En móvil los bloques pasan a 2 columnas
+
+   ============================================================
+   RECOMENDACIONES:
+   ============================================================
+   - Para el video usa max-width + margin: 0 auto para centrarlo
+   - Agrega border-radius y box-shadow al elemento <video>
+     para que se vea integrado al diseño
+   - Para el contador, CSS Grid con repeat(4, 1fr) funciona bien
+   - Los números grandes se logran bien con font-size en rem
+     y font-weight: 800
+
+   !! CRÍTICO PARA LA ANIMACIÓN JS:
+      El archivo js/main.js ya tiene el código listo.
+      Para que funcione DEBES usar exactamente estas clases:
+        class="jm-contador-numero" data-target="500"
+      El JS busca esa clase específica para animar el conteo.
+
+   ============================================================
+   CONTENIDO PARA EL HTML (ponlo en inicio.html):
+   ============================================================
+
+   — SECCIÓN VIDEO —
+   Subtítulo badge: "EN ACCIÓN"
+   Título:          "Conoce Lo Que Hacemos"
+   Descripción:     "Mira cómo NXR TECH transforma la experiencia
+                     tecnológica de nuestros clientes."
+   Video: <video src="video/demo.mp4" poster="img/video-poster.jpg" controls>
+   Botón: "Ver Catálogo" (usa clase btn-primario)
+
+   — SECCIÓN CONTADOR —
+   Bloque 1: data-target="500"  → "Clientes Satisfechos"
+   Bloque 2: data-target="1200" → "Productos Vendidos"
+   Bloque 3: data-target="10"   → "Años de Experiencia"
+   Bloque 4: data-target="98"   → "% de Satisfacción"
+   (muestra el símbolo + o % en el HTML, solo el número en data-target)
+
+   ============================================================
+   VARIABLES DISPONIBLES (usa solo estas, sin colores directos):
+   ============================================================
+   var(--color-acento)         azul principal (números del contador)
+   var(--color-fondo-oscuro)   fondo sección contador
+   var(--color-fondo-medio)    fondo sección video
+   var(--color-texto-claro)    texto sobre fondo oscuro
+   var(--color-texto-gris)     etiquetas del contador
+   var(--color-borde)          bordes sutiles
+   var(--fuente-principal)     Poppins
+   var(--radio-borde)          redondeo de esquinas
+   var(--transicion)           animación de hover
+   ============================================================ */

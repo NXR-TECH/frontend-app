@@ -1,0 +1,116 @@
+/* ============================================================
+   base.css — NXR TECH
+   ARCHIVO BASE — NO MODIFICAR
+   Solo contiene variables globales y reset.
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   VARIABLES GLOBALES
+   ------------------------------------------------------------ */
+:root {
+    /* Colores de fondo */
+    --color-fondo-oscuro: #0d0d0d;
+    --color-fondo-medio: #1a1a1a;
+    --color-fondo-card: #1e1e1e;
+    --color-fondo-claro: #f5f5f7;
+    --color-fondo-claro2: #e8e8ed;
+
+    /* Color acento / primario */
+    --color-acento: #0071e3;
+    --color-acento-hover: #0077ed;
+    --color-acento-glow: rgba(0, 113, 227, 0.4);
+
+    /* Colores de texto */
+    --color-texto-claro: #f5f5f7;
+    --color-texto-oscuro: #1d1d1f;
+    --color-texto-gris: #6e6e73;
+    --color-texto-gris-claro: #a1a1a6;
+
+    /* Bordes y sombras */
+    --color-borde: rgba(255, 255, 255, 0.08);
+    --sombra-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+    /* Tipografía */
+    --fuente-principal: 'Poppins', sans-serif;
+
+    /* Otros */
+    --radio-borde: 14px;
+    --transicion: all 0.3s ease;
+    --max-ancho: 1200px;
+}
+
+/* ------------------------------------------------------------
+   RESET GENERAL
+   ------------------------------------------------------------ */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-claro);
+    line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transicion);
+}
+
+ul {
+    list-style: none;
+}
+
+/* ------------------------------------------------------------
+   CONTENEDOR GLOBAL
+   ------------------------------------------------------------ */
+.container {
+    max-width: var(--max-ancho);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ------------------------------------------------------------
+   ANIMACIONES BASE
+   ------------------------------------------------------------ */
+.animar {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animar-delay-1 { transition-delay: 0.1s; }
+.animar-delay-2 { transition-delay: 0.2s; }
+.animar-delay-3 { transition-delay: 0.3s; }
+.animar-delay-4 { transition-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
