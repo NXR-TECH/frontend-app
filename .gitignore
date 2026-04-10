@@ -1,1 +1,5 @@
+# Ignorar carpeta maestra de referencia
 maestro/
+
+# VSCode
+.vscode/
