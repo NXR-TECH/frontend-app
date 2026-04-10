@@ -12,35 +12,50 @@
    ============================================================
    DESCRIPCIÓN VISUAL DE LA SECCIÓN:
    ============================================================
-   - Fondo claro (var(--color-fondo-claro)), contrasta con las
-     secciones oscuras que la rodean
-   - Encabezado centrado: un pequeño subtítulo en azul acento
-     arriba, luego el título grande, luego una descripción breve
-   - Debajo, 4 cards en fila distribuidas con grid o flexbox
-   - Cada card es compacta: ícono arriba (colorido, ~70px),
-     título en negrita y descripción corta debajo
-   - Las cards tienen fondo blanco, bordes redondeados y sombra
-     suave — al pasar el mouse se elevan y muestran un acento
-     de color en el borde
+   La sección tiene fondo claro (var(--color-fondo-claro)) y
+   ocupa padding: 100px arriba y abajo. Contrasta con las
+   secciones oscuras que la rodean.
 
-   ============================================================
-   RECOMENDACIONES:
-   ============================================================
-   - Para el grid de 4 columnas, CSS Grid con
-     grid-template-columns: repeat(4, 1fr) es tu mejor opción
-   - En tablet pasa a 2 columnas, en móvil a 1
-   - Los íconos son imágenes externas (Icons8 Fluency), no Font
-     Awesome — ponlos dentro de un contenedor con tamaño fijo
-   - El hover se siente mejor con transform + box-shadow juntos
-   - Apóyate en var(--transicion) para que el efecto sea suave
+   Arriba hay un encabezado centrado con max-width de ~700px:
+     · Un badge pequeño en azul acento con fondo semitransparente
+       (texto ~0.78rem, uppercase, letra-espaciado 1px)
+     · Título grande debajo (~2.8rem, font-weight 700)
+     · Descripción en var(--color-texto-gris), tamaño 1rem
+     · El encabezado tiene margin-bottom de ~64px antes del grid
+
+   Debajo, 4 cards en fila con gap de 24px:
+     · Cada card: fondo blanco, padding 36px 24px, texto centrado
+     · Bordes redondeados (var(--radio-borde))
+     · Sombra suave: 0 4px 20px rgba(0,0,0,0.07)
+     · Borde 1px de color muy claro (#e8e8ed aprox.)
+
+   Dentro de cada card:
+     · Contenedor del ícono: 80x80px, fondo azul muy suave
+       (rgba(0,113,227,0.08)), border-radius: 20px, centrado
+       con margin-bottom ~20px
+     · La imagen del ícono mide 48x48px dentro del contenedor
+     · Título h3: ~1rem, font-weight 700, color texto oscuro,
+       margin-bottom 10px
+     · Párrafo: 0.875rem, var(--color-texto-gris), line-height 1.7
+
+   Hover de la card:
+     · translateY(-8px)
+     · box-shadow: 0 16px 40px rgba(0,113,227,0.15)
+     · border-color cambia a var(--color-acento)
+     · El contenedor del ícono también escala levemente (scale 1.05)
+       y su fondo se intensifica un poco
+
+   Responsive:
+     · max-width 1024px → 2 columnas
+     · max-width 480px  → 1 columna
 
    ============================================================
    CONTENIDO PARA EL HTML (ponlo en inicio.html):
    ============================================================
-   Subtítulo badge: "NUESTROS SERVICIOS"
-   Título:          "Soluciones Tecnológicas de Clase Mundial"
-   Descripción:     "Todo lo que necesitas en un solo lugar,
-                     con la mejor calidad y respaldo técnico."
+   Badge:      "NUESTROS SERVICIOS"
+   Título:     "Soluciones Tecnológicas de Clase Mundial"
+   Descripción:"Todo lo que necesitas en un solo lugar,
+                con la mejor calidad y respaldo técnico."
 
    Card 1 — Teléfonos Móviles
      Ícono: https://img.icons8.com/fluency/96/smartphone.png
@@ -63,7 +78,7 @@
    ============================================================
    var(--color-acento)         azul principal
    var(--color-fondo-claro)    fondo de la sección
-   var(--color-texto-oscuro)   títulos
+   var(--color-texto-oscuro)   títulos y texto de cards
    var(--color-texto-gris)     descripciones
    var(--color-borde)          bordes sutiles
    var(--fuente-principal)     Poppins

@@ -13,38 +13,50 @@
    ============================================================
    DESCRIPCIÓN VISUAL — SECCIÓN VIDEO:
    ============================================================
-   - Fondo intermedio (var(--color-fondo-medio)), más oscuro que
-     el claro pero no tan oscuro como las otras secciones
-   - Encabezado centrado arriba: subtítulo en azul, título grande,
-     descripción breve
-   - El video está centrado, con un ancho máximo razonable,
-     bordes redondeados y una sombra suave debajo
-   - Debajo del video hay un botón "Ver Catálogo"
-   - En móvil el video ocupa el 100% del ancho
+   Fondo: var(--color-fondo-medio). Padding: 100px arriba y abajo.
+   Todo el contenido está centrado (text-align: center).
 
+   Encabezado con max-width ~600px, centrado, margin-bottom ~48px:
+     · Badge en azul acento (~0.78rem, uppercase, letter-spacing 1px)
+     · Título (~2.8rem, font-weight 700, color texto claro)
+     · Descripción en var(--color-texto-gris), 1rem
+
+   Contenedor del video:
+     · max-width: 900px, centrado con margin: 0 auto
+     · margin-bottom: 40px
+     · border-radius: 20px, overflow: hidden
+     · box-shadow: 0 30px 80px rgba(0,0,0,0.6)
+     · Borde: 1px solid var(--color-borde)
+     · El elemento <video> ocupa width: 100%, display: block
+
+   Botón "Ver Catálogo" debajo del video, centrado.
+   Usa la clase btn-primario que ya está en css/main.css.
+
+   Responsive:
+     · max-width 768px → el video ocupa 100% del ancho
+
+   ============================================================
    DESCRIPCIÓN VISUAL — SECCIÓN CONTADOR:
    ============================================================
-   - Fondo oscuro (var(--color-fondo-oscuro))
-   - 4 bloques en fila, cada uno muestra:
-       · Un número grande en azul acento (ej. 500+)
-       · Una etiqueta descriptiva debajo en gris claro
-   - Los números arrancan en 0 y se animan hasta su valor real
-     al hacer scroll — el JS ya está implementado en js/main.js
-   - En móvil los bloques pasan a 2 columnas
+   Fondo: var(--color-fondo-oscuro). Padding: 80px arriba y abajo.
+   Borde superior e inferior: 1px solid var(--color-borde).
 
-   ============================================================
-   RECOMENDACIONES:
-   ============================================================
-   - Para el video usa max-width + margin: 0 auto para centrarlo
-   - Agrega border-radius y box-shadow al elemento <video>
-     para que se vea integrado al diseño
-   - Para el contador, CSS Grid con repeat(4, 1fr) funciona bien
-   - Los números grandes se logran bien con font-size en rem
-     y font-weight: 800
+   Grid de 4 columnas iguales, gap: 40px, texto centrado.
+
+   Cada bloque:
+     · padding: 20px
+     · Número grande: font-size clamp(2.5rem, 5vw, 4rem),
+       font-weight 800, color var(--color-acento),
+       display block, line-height 1, margin-bottom 10px
+     · Etiqueta debajo: 0.9rem, color var(--color-texto-gris-claro),
+       font-weight 500, uppercase, letter-spacing 1px
+
+   Responsive:
+     · max-width 768px → 2 columnas
 
    !! CRÍTICO PARA LA ANIMACIÓN JS:
       El archivo js/main.js ya tiene el código listo.
-      Para que funcione DEBES usar exactamente estas clases:
+      Para que funcione DEBES usar exactamente:
         class="jm-contador-numero" data-target="500"
       El JS busca esa clase específica para animar el conteo.
 
@@ -53,12 +65,12 @@
    ============================================================
 
    — SECCIÓN VIDEO —
-   Subtítulo badge: "EN ACCIÓN"
-   Título:          "Conoce Lo Que Hacemos"
-   Descripción:     "Mira cómo NXR TECH transforma la experiencia
-                     tecnológica de nuestros clientes."
+   Badge:       "EN ACCIÓN"
+   Título:      "Conoce Lo Que Hacemos"
+   Descripción: "Mira cómo NXR TECH transforma la experiencia
+                 tecnológica de nuestros clientes."
    Video: <video src="video/demo.mp4" poster="img/video-poster.jpg" controls>
-   Botón: "Ver Catálogo" (usa clase btn-primario)
+   Botón: "Ver Catálogo" → clase btn-primario
 
    — SECCIÓN CONTADOR —
    Bloque 1: data-target="500"  → "Clientes Satisfechos"
@@ -70,13 +82,14 @@
    ============================================================
    VARIABLES DISPONIBLES (usa solo estas, sin colores directos):
    ============================================================
-   var(--color-acento)         azul principal (números del contador)
-   var(--color-fondo-oscuro)   fondo sección contador
-   var(--color-fondo-medio)    fondo sección video
-   var(--color-texto-claro)    texto sobre fondo oscuro
-   var(--color-texto-gris)     etiquetas del contador
-   var(--color-borde)          bordes sutiles
-   var(--fuente-principal)     Poppins
-   var(--radio-borde)          redondeo de esquinas
-   var(--transicion)           animación de hover
+   var(--color-acento)            azul principal (números del contador)
+   var(--color-fondo-oscuro)      fondo sección contador
+   var(--color-fondo-medio)       fondo sección video
+   var(--color-texto-claro)       texto sobre fondo oscuro
+   var(--color-texto-gris)        descripciones
+   var(--color-texto-gris-claro)  etiquetas del contador
+   var(--color-borde)             bordes de sección y video
+   var(--fuente-principal)        Poppins
+   var(--radio-borde)             redondeo de esquinas
+   var(--transicion)              animación de hover
    ============================================================ */

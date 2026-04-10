@@ -12,39 +12,52 @@
    ============================================================
    DESCRIPCIÓN VISUAL DE LA SECCIÓN:
    ============================================================
-   - Fondo claro (var(--color-fondo-claro))
-   - Encabezado centrado: subtítulo en azul acento, título grande,
-     descripción breve
-   - 3 cards en fila, cada una muestra la opinión de un cliente:
-       · Una comilla grande " como elemento decorativo en azul
-       · El texto del testimonio en cursiva o texto normal
-       · 5 estrellas doradas debajo del texto
-       · Una línea separadora fina
-       · Avatar circular con las iniciales del cliente
-         (fondo con degradado azul, texto blanco)
-       · Nombre en negrita y cargo/descripción en gris pequeño
-   - Hover: la card se eleva y aparece un borde en azul acento
-   - En móvil: 1 columna
+   Fondo: var(--color-fondo-claro). Padding: 100px arriba y abajo.
+   El color del texto base aquí es var(--color-texto-oscuro)
+   (sección clara, al contrario de las oscuras).
 
-   ============================================================
-   RECOMENDACIONES:
-   ============================================================
-   - La comilla se puede lograr con content: '"' en un ::before,
-     o simplemente con un elemento <span> o <div> con font-size
-     muy grande (ej. 4–5rem) y line-height ajustado
-   - El avatar circular es un div con border-radius: 50%,
-     width y height iguales, y un gradiente de fondo en azul
-   - Para las estrellas puedes usar el carácter ★ directamente
-     en el HTML o iconos de Font Awesome (fas fa-star)
-   - El color amarillo de las estrellas (#f5a623) es la única
-     excepción permitida para color directo en esta sección
+   Encabezado centrado con max-width ~600px, margin-bottom ~64px:
+     · Badge en azul acento (~0.78rem, uppercase, letter-spacing 1px)
+     · Título (~2.8rem, font-weight 700, color texto oscuro)
+     · Descripción en var(--color-texto-gris), 1rem
+
+   Grid de 3 columnas iguales, gap: 28px.
+
+   Cada card:
+     · Fondo blanco (#fff)
+     · border-radius: var(--radio-borde)
+     · padding: 36px 28px
+     · box-shadow: 0 4px 20px rgba(0,0,0,0.07)
+     · Borde: 1px solid (color muy claro, casi blanco)
+
+   Contenido de la card (en este orden):
+     · Comilla: font-size 4rem, color var(--color-acento),
+       line-height 0.5, margin-bottom 20px, font-family Georgia
+     · Texto del testimonio: 0.95rem, color var(--color-texto-gris),
+       line-height 1.8, margin-bottom 24px
+     · Estrellas: font-size 1rem, color #f5a623,
+       letter-spacing 2px, margin-bottom 20px
+     · Fila del autor con display flex, align-items center, gap 14px:
+         - Avatar: 46x46px, border-radius 50%,
+           background linear-gradient(135deg, var(--color-acento), #00c8ff)
+           texto blanco, font-weight 700, font-size 1.1rem
+         - Nombre: font-weight 700, 0.9rem, color texto oscuro
+         - Cargo: 0.8rem, color var(--color-texto-gris)
+
+   Hover de la card:
+     · translateY(-6px)
+     · box-shadow: 0 16px 40px rgba(0,113,227,0.12)
+     · border-color cambia a var(--color-acento)
+
+   Responsive:
+     · max-width 768px → 1 columna
 
    ============================================================
    CONTENIDO PARA EL HTML (ponlo en inicio.html):
    ============================================================
-   Subtítulo badge: "TESTIMONIOS"
-   Título:          "Enfoque en Nuestros Clientes"
-   Descripción:     "Lo que dicen quienes ya confían en nosotros."
+   Badge:      "TESTIMONIOS"
+   Título:     "Enfoque en Nuestros Clientes"
+   Descripción:"Lo que dicen quienes ya confían en nosotros."
 
    Card 1 — Pedro Yarleque  (iniciales: PY)
    Cargo:   Emprendedor Digital
@@ -67,10 +80,10 @@
    ============================================================
    VARIABLES DISPONIBLES (usa solo estas, sin colores directos):
    ============================================================
-   var(--color-acento)         azul principal (comilla, borde hover)
+   var(--color-acento)         azul principal (comilla, avatar, borde hover)
    var(--color-fondo-claro)    fondo de la sección
    var(--color-texto-oscuro)   nombres y títulos
-   var(--color-texto-gris)     cargo y texto secundario
+   var(--color-texto-gris)     texto del testimonio y cargo
    var(--color-borde)          bordes sutiles
    var(--fuente-principal)     Poppins
    var(--radio-borde)          redondeo de esquinas

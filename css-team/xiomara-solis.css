@@ -13,74 +13,100 @@
    ============================================================
    DESCRIPCIÓN VISUAL — SECCIÓN NOTICIAS:
    ============================================================
-   - Fondo claro (var(--color-fondo-claro))
-   - Encabezado centrado: subtítulo en azul, título grande,
-     descripción breve
-   - 3 cards en fila, cada una con:
-       · Imagen de portada que ocupa todo el ancho superior
-         (la imagen llega al borde de la card, sin padding)
-       · Badge de categoría en azul acento sobre o cerca de la imagen
-       · Fecha en gris pequeño
-       · Título de la noticia en negrita
-       · Extracto corto en gris
-       · Link "Leer más →" en azul acento al final
-   - Hover: la card se eleva con sombra más pronunciada
-   - En móvil: 1 columna
+   Fondo: var(--color-fondo-claro). Padding: 100px arriba y abajo.
+   El color del texto base es var(--color-texto-oscuro).
 
+   Encabezado centrado con max-width ~600px, margin-bottom ~64px:
+     · Badge en azul acento (~0.78rem, uppercase, letter-spacing 1px)
+     · Título (~2.8rem, font-weight 700, color texto oscuro)
+     · Descripción en var(--color-texto-gris), 1rem
+
+   Grid de 3 columnas iguales, gap: 28px.
+
+   Cada card:
+     · Fondo blanco (#fff)
+     · border-radius: var(--radio-borde)
+     · overflow: hidden (la imagen llega al borde sin padding)
+     · box-shadow: 0 4px 20px rgba(0,0,0,0.07)
+     · Borde: 1px solid (color muy claro)
+
+   Imagen de la card:
+     · width 100%, height 200px, object-fit: cover
+     · Sin padding — va pegada al borde superior de la card
+
+   Contenido de la card (padding: 24px):
+     · Meta fila (display flex, gap 12px, margin-bottom 12px):
+         - Badge categoría: 0.72rem, uppercase, letter-spacing 1px,
+           color var(--color-acento), fondo rgba(0,113,227,0.08),
+           padding 3px 10px, border-radius 50px
+         - Fecha: 0.78rem, color var(--color-texto-gris)
+     · Título: 1rem, font-weight 700, line-height 1.4,
+       color texto oscuro, margin-bottom 10px
+     · Extracto: 0.875rem, color gris, line-height 1.7,
+       margin-bottom 20px
+     · Link "Leer más →": 0.875rem, font-weight 600,
+       color var(--color-acento) — en hover, el gap entre
+       texto y flecha se amplía levemente
+
+   Hover de la card:
+     · translateY(-8px)
+     · box-shadow: 0 16px 40px rgba(0,113,227,0.15)
+
+   Responsive:
+     · max-width 768px → 1 columna
+
+   ============================================================
    DESCRIPCIÓN VISUAL — SECCIÓN CTA:
    ============================================================
-   - Sección de cierre con fondo oscuro degradado hacia azul
-     profundo — transmite confianza y llama a la acción
-   - Todo el contenido está centrado
-   - Título grande en blanco, llamativo
-   - Descripción corta en gris claro
-   - Dos botones juntos centrados debajo
+   Fondo: linear-gradient(135deg, #0a1628 0%, #0d1f3c 50%, #0a1628 100%)
+   Padding: 100px arriba y abajo.
+   Todo centrado (text-align: center), position: relative.
 
-   ============================================================
-   RECOMENDACIONES:
-   ============================================================
-   - Para las cards de noticias, la imagen sin padding se logra
-     poniendo overflow: hidden en la card y sin padding en la
-     parte superior del contenedor de imagen
-   - El degradado del CTA queda bien con linear-gradient de
-     var(--color-fondo-oscuro) hacia un azul muy oscuro
-   - Puedes agregar un efecto de luz radial sutil en el CTA
-     usando un pseudo-elemento ::before con radial-gradient
-   - Para el CTA usa las clases btn-primario y btn-secundario
-     que ya están definidas en css/main.css
+   Efecto de luz radial centrado (pseudo-elemento ::before):
+     · 600x600px, centrado con translate(-50%, -50%)
+     · radial-gradient de rgba(0,113,227,0.12) a transparent
+     · No interfiere con el contenido (no tiene z-index alto)
+
+   Contenido centrado con max-width ~700px:
+     · Título: ~2.8rem, font-weight 700, color texto claro,
+       margin-bottom 20px
+     · Descripción: 1rem, color var(--color-texto-gris-claro),
+       margin-bottom 40px
+     · Dos botones en fila centrada (display flex, gap 16px,
+       justify-content center, flex-wrap wrap):
+         - "Contáctanos ahora" → clase btn-primario
+         - "Ver Productos"     → clase btn-secundario
+       (ambas clases ya están en css/main.css)
+
+   Responsive:
+     · max-width 480px → botones en columna, centrados
 
    ============================================================
    CONTENIDO PARA EL HTML (ponlo en inicio.html):
    ============================================================
 
    — SECCIÓN NOTICIAS —
-   Subtítulo badge: "BLOG"
-   Título:          "Últimas Noticias"
-   Descripción:     "Mantente al día con lo último en tecnología."
+   Badge:      "BLOG"
+   Título:     "Últimas Noticias"
+   Descripción:"Mantente al día con lo último en tecnología."
 
-   Noticia 1
-     Imagen:      img/noticia-1.jpg
-     Categoría:   Tecnología
-     Fecha:       10 de Abril, 2026
-     Título:      Los 5 smartphones más potentes del 2026
-     Extracto:    Descubre qué dispositivos lideran el mercado este
-                  año en rendimiento, cámara y autonomía.
+   Noticia 1 — img/noticia-1.jpg
+     Categoría: Tecnología  |  Fecha: 10 de Abril, 2026
+     Título:    Los 5 smartphones más potentes del 2026
+     Extracto:  Descubre qué dispositivos lideran el mercado este
+                año en rendimiento, cámara y autonomía.
 
-   Noticia 2
-     Imagen:      img/noticia-2.jpg
-     Categoría:   Accesorios
-     Fecha:       5 de Abril, 2026
-     Título:      Guía para elegir los mejores accesorios gaming
-     Extracto:    Teclados mecánicos, mousepads y auriculares con
-                  cancelación de ruido: todo lo que necesitas saber.
+   Noticia 2 — img/noticia-2.jpg
+     Categoría: Accesorios  |  Fecha: 5 de Abril, 2026
+     Título:    Guía para elegir los mejores accesorios gaming
+     Extracto:  Teclados mecánicos, mousepads y auriculares con
+                cancelación de ruido: todo lo que necesitas saber.
 
-   Noticia 3
-     Imagen:      img/noticia-3.jpg
-     Categoría:   Soporte
-     Fecha:       1 de Abril, 2026
-     Título:      ¿Cada cuánto debes hacer mantenimiento a tu PC?
-     Extracto:    La frecuencia ideal y los pasos básicos para
-                  mantener tu equipo rápido y sin problemas.
+   Noticia 3 — img/noticia-3.jpg
+     Categoría: Soporte  |  Fecha: 1 de Abril, 2026
+     Título:    ¿Cada cuánto debes hacer mantenimiento a tu PC?
+     Extracto:  La frecuencia ideal y los pasos básicos para
+                mantener tu equipo rápido y sin problemas.
 
    — SECCIÓN CTA —
    Título:      "¿Listo para Transformar Tu Negocio?"
@@ -92,14 +118,19 @@
    ============================================================
    VARIABLES DISPONIBLES (usa solo estas, sin colores directos):
    ============================================================
-   var(--color-acento)         azul principal
-   var(--color-fondo-claro)    fondo sección noticias
-   var(--color-fondo-oscuro)   base del degradado del CTA
-   var(--color-texto-claro)    texto blanco (CTA)
-   var(--color-texto-oscuro)   títulos (noticias)
-   var(--color-texto-gris)     texto secundario
-   var(--color-borde)          bordes sutiles
-   var(--fuente-principal)     Poppins
-   var(--radio-borde)          redondeo de esquinas
-   var(--transicion)           animación de hover
+   var(--color-acento)            azul principal
+   var(--color-fondo-claro)       fondo sección noticias
+   var(--color-fondo-oscuro)      referencia para el fondo del CTA
+   var(--color-texto-claro)       texto blanco en el CTA
+   var(--color-texto-oscuro)      títulos en noticias
+   var(--color-texto-gris)        texto secundario
+   var(--color-texto-gris-claro)  descripción del CTA
+   var(--color-borde)             bordes sutiles
+   var(--fuente-principal)        Poppins
+   var(--radio-borde)             redondeo de esquinas
+   var(--transicion)              animación de hover
+
+   Excepción: el gradiente del CTA usa valores oscuros (#0a1628,
+   #0d1f3c) que no están en variables — es la única excepción
+   permitida en esta sección.
    ============================================================ */
