@@ -57,7 +57,7 @@ frontend-app/
 
 | Integrante | Rama | Sección |
 |---|---|---|
-| U23316357 - Ricardo Enrique Prada Guerra ⭐ | `feature/enrique-prada` | Navbar · Hero · Footer |
+| U23316357 - Ricardo Enrique Prada Guerra | `feature/enrique-prada` | Navbar · Hero · Footer |
 | U23265087 - Juan Jose Morales Velasquez | `feature/juan-morales` | Video · Contador |
 | U23242558 - Maykol Adan Calle Paredes | `feature/maykol-calle` | Soluciones Tecnológicas |
 | U23265077 - Joel Anthony Saldaña Chavez | `feature/joel-saldana` | Productos Destacados |
