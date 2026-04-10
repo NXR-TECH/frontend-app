@@ -174,7 +174,6 @@ nav {
     .nav-links { display: none; }
     .nav-hamburger { display: flex; }
 
-    /* JS toggle: agrega/quita esta clase al presionar hamburguesa */
     .nav-links.nav-abierto {
         display: flex;
         flex-direction: column;
