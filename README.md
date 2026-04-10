@@ -37,7 +37,7 @@ frontend-app/
 │
 ├── img/                     # Imágenes del sitio
 ├── video/                   # Video demostrativo
-└── referencias/             # Mapa de sitio y wireframe (solo consulta)
+└── docs/                    # Mapa de sitio y wireframe (solo consulta)
 ```
 
 ---
