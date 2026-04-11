@@ -222,12 +222,24 @@
              ARCHIVO CSS: css-team/juan-morales.css
              ============================================= -->
         <section id="jm-video">
-            <p
-                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
-                [ Juan Morales — Video Demostrativo ]<br>Agrega tu HTML aquí · Estilos en css-team/juan-morales.css
-            </p>
-        </section>
 
+    <div class="jm-video-header">
+        <span class="jm-video-badge">● VIDEO DEMOSTRATIVO</span>
+        <h2 class="jm-video-titulo">Conoce Lo Que Hacemos</h2>
+        <p class="jm-video-descripcion">
+            Descubre cómo nuestras soluciones de tecnología pueden transformar tu empresa al siguiente nivel.
+        </p>
+    </div>
+
+    <div class="jm-video-wrapper">
+        <video src="video/demo.mp4" poster="img/video-poster.jpg" controls></video>
+    </div>
+
+    <div class="jm-video-boton">
+        <a href="#" class="btn-primario">Ver Catálogo →</a>
+    </div>
+
+</section>
         <!-- =============================================
              SECCIÓN: TESTIMONIOS
              RESPONSABLE: Christian Diaz
@@ -309,10 +321,33 @@
              ARCHIVO CSS: css-team/juan-morales.css
              ============================================= -->
         <section id="jm-contador">
-            <p
-                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
-                [ Juan Morales — Contador de Logros ]<br>Agrega tu HTML aquí · Estilos en css-team/juan-morales.css
-            </p>
+            <div class="container">
+
+                <div class="jm-contador-grid">
+
+                    <div class="jm-contador-item">
+                        <span class="jm-contador-numero" data-target="500">0</span>
+                        <p class="jm-contador-label">Clientes Satisfechos +</p>
+                    </div>
+
+                    <div class="jm-contador-item">
+                        <span class="jm-contador-numero" data-target="1200">0</span>
+                        <p class="jm-contador-label">Productos Vendidos +</p>
+                    </div>
+
+                    <div class="jm-contador-item">
+                        <span class="jm-contador-numero" data-target="10">0</span>
+                        <p class="jm-contador-label">Años de Experiencia +</p>
+                    </div>
+
+                    <div class="jm-contador-item">
+                        <span class="jm-contador-numero" data-target="98">0</span>
+                        <p class="jm-contador-label">% de Satisfacción</p>
+                    </div>
+
+                </div>
+
+            </div>
         </section>
 
         <!-- =============================================
