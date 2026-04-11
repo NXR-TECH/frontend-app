@@ -93,27 +93,38 @@
    var(--radio-borde)             redondeo de esquinas
    var(--transicion)              animación de hover
    ============================================================ */
+
 #jm-contador {
     background: var(--color-fondo-oscuro);
-    padding: 80px 20px;
+    padding: 80px 0; 
     border-top: 1px solid var(--color-borde);
     border-bottom: 1px solid var(--color-borde);
     font-family: var(--fuente-principal);
 }
 
+
 .jm-contador-grid {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px; 
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
-    align-items: center;
+
+    text-align: center;
 }
 
+
 .jm-contador-item {
-    text-align: center;
     padding: 20px;
     transition: var(--transicion);
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    min-height: 120px; 
 }
 
 .jm-contador-item:hover {
@@ -129,6 +140,7 @@
     color: var(--color-acento);
 }
 
+
 .jm-contador-label {
     margin: 0;
     font-size: 0.9rem;
@@ -138,34 +150,21 @@
     color: var(--color-texto-gris-claro);
 }
 
-/* TABLET */
+
 @media (max-width: 768px) {
     .jm-contador-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
     }
 }
 
-/* MÓVIL */
+
 @media (max-width: 480px) {
     #jm-contador {
-        padding: 60px 16px;
+        padding: 60px 0;
     }
 
     .jm-contador-grid {
         grid-template-columns: 1fr;
         gap: 24px;
-    }
-
-    .jm-contador-item {
-        padding: 10px;
-    }
-
-    .jm-contador-numero {
-        font-size: 3rem;
-    }
-
-    .jm-contador-label {
-        font-size: 0.85rem;
     }
 }
