@@ -91,3 +91,134 @@
 
    Excepción permitida: #f5a623 solo para el color de las estrellas
    ============================================================ */
+
+
+
+.cd-section{
+  background: var(--color-fondo-claro);
+  padding: 100px 0;
+  color: var(--color-texto-oscuro);
+  font-family: var(--fuente-principal);
+}
+.cd-header{
+  max-width: 600px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+.cd-badge{
+  font-size: 0.78rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-acento);
+
+  /* CONTORNO ICONO*/
+  background-color: #dbeafe;
+  color: #1a73e8;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.cd-badge i{
+  font-size: 14px;
+  color: #1a73e8;
+}
+
+/* ENCABEZADO */
+.cd-titulo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--color-texto-oscuro);
+  margin: 12px 0;
+}
+
+.cd-descripcion {
+  color: var(--color-texto-gris);
+  font-size: 1rem;
+}
+
+/* COLUMNAS */
+.cd-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+.cd-card{
+  background: #fff;
+  border-radius: var(--radio-borde);
+  padding: 36px 28px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  border: 1px solid var(--color-borde);
+  transition: var(--transicion);
+}
+
+.cd-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,113,227,0.12);
+  border-color: var(--color-acento);
+}
+
+.cd-comilla{
+  font-size: 4rem;
+  color: var(--color-acento);
+  font-family: Georgia;
+  line-height: 0.5;
+  margin-bottom: 20px;
+}
+
+.cd-texto{
+  font-size: 0.95rem;
+  color: var(--color-texto-gris);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.cd-estrellas{
+  color: #f5a623;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.cd-autor{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cd-avatar{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, var(--color-acento), #00c8ff);
+}
+
+.cd-nombre{
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-texto-oscuro);
+}
+
+.cd-cargo{
+  font-size: 0.8rem;
+  color: var(--color-texto-gris);
+}
+
+/* RESPONSIVA */
+@media (max-width: 768px){
+  .cd-grid{
+    grid-template-columns: 1fr;
+  }
+}
