@@ -94,16 +94,15 @@
 
 
 
-   .cd-testimonios{
+.cd-section{
   background: var(--color-fondo-claro);
-  padding: 100px 20px;
+  padding: 100px 0;
   color: var(--color-texto-oscuro);
   font-family: var(--fuente-principal);
 }
-
 .cd-header{
   max-width: 600px;
-  margin: 0 auto 64px auto;
+  margin: 0 auto 64px;
   text-align: center;
 }
 
@@ -112,26 +111,44 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--color-acento);
-  font-weight: 600;
+
+  /* CONTORNO ICONO*/
+  background-color: #dbeafe;
+  color: #1a73e8;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 800;
 }
 
-.cd-header h2{
+.cd-badge i{
+  font-size: 14px;
+  color: #1a73e8;
+}
+
+/* ENCABEZADO */
+.cd-titulo {
   font-size: 2.8rem;
   font-weight: 700;
-  margin: 10px 0;
+  color: var(--color-texto-oscuro);
+  margin: 12px 0;
 }
 
-.cd-header p{
+.cd-descripcion {
   color: var(--color-texto-gris);
   font-size: 1rem;
 }
 
+/* COLUMNAS */
 .cd-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
 }
 
+/* CARD */
 .cd-card{
   background: #fff;
   border-radius: var(--radio-borde);
