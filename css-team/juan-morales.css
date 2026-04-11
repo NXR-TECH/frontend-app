@@ -93,6 +93,10 @@
    var(--radio-borde)             redondeo de esquinas
    var(--transicion)              animación de hover
    ============================================================ */
+/* =========================================
+   SECCIÓN VIDEO
+========================================= */
+
 #jm-video {
     background: var(--color-fondo-medio);
     padding: 100px 20px;
@@ -100,6 +104,7 @@
     font-family: var(--fuente-principal);
 }
 
+/* HEADER */
 .jm-video-header {
     max-width: 600px;
     margin: 0 auto 48px;
@@ -107,43 +112,64 @@
 
 .jm-video-badge {
     display: inline-block;
-    font-size: 0.78rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--color-acento);
-    margin-bottom: 10px;
+    font-weight: 600;
+
+    padding: 6px 14px;
+    border-radius: 999px;
+
+    background: rgba(0, 123, 255, 0.1); /* efecto suave */
+    border: 1px solid rgba(0, 123, 255, 0.25);
+
+    margin-bottom: 16px;
 }
 
 .jm-video-titulo {
     font-size: 2.8rem;
     font-weight: 700;
     color: var(--color-texto-claro);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .jm-video-descripcion {
     font-size: 1rem;
     color: var(--color-texto-gris);
+    line-height: 1.6;
 }
 
+/* VIDEO */
 .jm-video-wrapper {
     max-width: 900px;
     margin: 0 auto 40px;
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid var(--color-borde);
-    box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
 }
 
-.jm-video {
+.jm-video-wrapper video {
     width: 100%;
     display: block;
 }
 
+/* BOTÓN */
 .jm-video-boton {
     text-align: center;
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .jm-video-titulo {
+        font-size: 2rem;
+    }
+
+    .jm-video-wrapper {
+        max-width: 100%;
+    }
+}
 #jm-contador {
     background: var(--color-fondo-oscuro);
     padding: 80px 0; 
