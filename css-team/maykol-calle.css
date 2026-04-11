@@ -18,9 +18,14 @@
     padding: 6px 16px;
     border-radius: 20px;
     font-size: 12px;
-    font-weight: bold;
-    display: inline-block;
+    font-weight: bold;  
+    display: inline-flex;  
+    align-items: center;   
+    gap: 8px;                
     margin-bottom: 20px;
+}
+.mc-titulo-pequeño i {
+    font-size: 14px;
 }
 
 .mc-S h1 {
