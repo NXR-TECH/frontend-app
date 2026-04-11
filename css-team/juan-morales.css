@@ -93,3 +93,79 @@
    var(--radio-borde)             redondeo de esquinas
    var(--transicion)              animación de hover
    ============================================================ */
+#jm-contador {
+    background: var(--color-fondo-oscuro);
+    padding: 80px 20px;
+    border-top: 1px solid var(--color-borde);
+    border-bottom: 1px solid var(--color-borde);
+    font-family: var(--fuente-principal);
+}
+
+.jm-contador-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.jm-contador-item {
+    text-align: center;
+    padding: 20px;
+    transition: var(--transicion);
+}
+
+.jm-contador-item:hover {
+    transform: translateY(-6px);
+}
+
+.jm-contador-numero {
+    display: block;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: var(--color-acento);
+}
+
+.jm-contador-label {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-texto-gris-claro);
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .jm-contador-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* MÓVIL */
+@media (max-width: 480px) {
+    #jm-contador {
+        padding: 60px 16px;
+    }
+
+    .jm-contador-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .jm-contador-item {
+        padding: 10px;
+    }
+
+    .jm-contador-numero {
+        font-size: 3rem;
+    }
+
+    .jm-contador-label {
+        font-size: 0.85rem;
+    }
+}
