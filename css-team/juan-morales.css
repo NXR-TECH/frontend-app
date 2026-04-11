@@ -93,6 +93,56 @@
    var(--radio-borde)             redondeo de esquinas
    var(--transicion)              animación de hover
    ============================================================ */
+#jm-video {
+    background: var(--color-fondo-medio);
+    padding: 100px 20px;
+    text-align: center;
+    font-family: var(--fuente-principal);
+}
+
+.jm-video-header {
+    max-width: 600px;
+    margin: 0 auto 48px;
+}
+
+.jm-video-badge {
+    display: inline-block;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-acento);
+    margin-bottom: 10px;
+}
+
+.jm-video-titulo {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--color-texto-claro);
+    margin-bottom: 12px;
+}
+
+.jm-video-descripcion {
+    font-size: 1rem;
+    color: var(--color-texto-gris);
+}
+
+.jm-video-wrapper {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--color-borde);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+}
+
+.jm-video {
+    width: 100%;
+    display: block;
+}
+
+.jm-video-boton {
+    text-align: center;
+}
 
 #jm-contador {
     background: var(--color-fondo-oscuro);
