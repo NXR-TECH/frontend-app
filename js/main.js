@@ -66,5 +66,5 @@ const observadorContador = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.5 });
 
-const seccionContador = document.getElementById('contador');
+const seccionContador = document.getElementById('jm-contador');
 if (seccionContador) observadorContador.observe(seccionContador);
