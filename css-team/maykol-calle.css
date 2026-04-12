@@ -68,6 +68,12 @@
     box-shadow: 0 15px 35px rgba(0, 113, 227, 0.15);
 }
 
+/* Agregado por Enrique Prada — efecto de movimiento en el ícono al hacer hover */
+.mc-tarjeta-item:hover .mc-icon-bg {
+    background-color: rgba(0, 113, 227, 0.15);
+    transform: scale(1.05);
+}
+
 /* Fondo del Icono */
 .mc-icon-bg {
     background-color: #f1f5ff;
@@ -78,6 +84,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--transicion);
 }
 
 .mc-icon-bg img {
