@@ -1,9 +1,9 @@
 /* Contenedor Principal de la Sección */
 .mc-S {
-    background-color: #f8faff; 
+    background-color: var(--color-fondo-claro);
     padding: 80px 20px;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: var(--fuente-principal);
 }
 
 /* Encabezado */
@@ -12,27 +12,28 @@
     margin: 0 auto 50px; 
 }
 
-.mc-titulo-pequeño {
+.mc-titulo-pequeno {
     background-color: #e8f0fe;
     color: #1a73e8;
     padding: 6px 16px;
     border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;  
+    font-size: 0.78rem;
+    font-weight: 600;
     display: inline-flex;  
     align-items: center;   
     gap: 8px;                
     margin-bottom: 20px;
 }
-.mc-titulo-pequeño i {
+.mc-titulo-pequeno i {
     font-size: 14px;
 }
 
 .mc-S h1 {
-    font-size: 36px;
-    color: #111;
-    margin-bottom: 20px;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 700;
     line-height: 1.2;
+    color: var(--color-texto-oscuro);
+    margin-bottom: 20px;
 }
 
 .mc-Descripcion {
@@ -63,8 +64,8 @@
 }
 .mc-tarjeta-item:hover {
     transform: translateY(-10px);
-    border-color: #3b82f6; 
-    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.15); 
+    border-color: var(--color-acento);
+    box-shadow: 0 15px 35px rgba(0, 113, 227, 0.15);
 }
 
 /* Fondo del Icono */
