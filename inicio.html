@@ -12,18 +12,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- BASE: Variables globales y reset -->
     <link rel="stylesheet" href="css/base.css">
 
-    <!-- MAIN: Estilos principales -->
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- CSS-TEAM: Estilos individuales de cada integrante (se quitara en la presentacion) -->
-    <link rel="stylesheet" href="css-team/juan-morales.css">
-    <link rel="stylesheet" href="css-team/maykol-calle.css">
-    <link rel="stylesheet" href="css-team/joel-saldana.css">
-    <link rel="stylesheet" href="css-team/christian-diaz.css">
-    <link rel="stylesheet" href="css-team/xiomara-solis.css">
 </head>
 
 <body>
@@ -82,11 +74,10 @@
         <!-- =============================================
              SECCIÓN: SOLUCIONES TECNOLÓGICAS
              RESPONSABLE: Maykol Calle
-             ARCHIVO CSS: css-team/maykol-calle.css
              ============================================= -->
         <section id="mc-soluciones" class="mc-S">
             <div class="mc-contenedor-header">
-                <span class="mc-titulo-pequeño">
+                <span class="mc-titulo-pequeno">
                     <i class="fas fa-bolt"></i> QUIÉNES SOMOS
                 </span>
                 <h1>Soluciones Tecnológicas de<br>Clase Mundial</h1>
@@ -138,7 +129,6 @@
         <!-- =============================================
              SECCIÓN: PRODUCTOS DESTACADOS
              RESPONSABLE: Joel Saldaña
-             ARCHIVO CSS: css-team/joel-saldana.css
              ============================================= -->
         <section id="js-productos">
             <div class="container">
@@ -219,49 +209,218 @@
         <!-- =============================================
              SECCIÓN: VIDEO DEMOSTRATIVO
              RESPONSABLE: Juan Morales
-             ARCHIVO CSS: css-team/juan-morales.css
              ============================================= -->
         <section id="jm-video">
-            <p
-                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
-                [ Juan Morales — Video Demostrativo ]<br>Agrega tu HTML aquí · Estilos en css-team/juan-morales.css
-            </p>
-        </section>
+            <div class="container">
 
+                <div class="jm-video-header">
+                    <span class="jm-video-badge"><i class="fas fa-play-circle"></i> VIDEO DEMOSTRATIVO</span>
+                    <h2 class="jm-video-titulo">Conoce Lo Que Hacemos</h2>
+                    <p class="jm-video-descripcion">
+                        Descubre cómo nuestras soluciones de tecnología pueden transformar tu empresa al siguiente
+                        nivel.
+                    </p>
+                </div>
+
+                <div class="jm-video-wrapper">
+                    <video src="video/demo.mp4" poster="img/video-poster.jpg" controls></video>
+                </div>
+
+                <div class="jm-video-boton">
+                    <a href="#" class="btn-primario">Ver Catálogo →</a>
+                </div>
+
+            </div>
+        </section>
         <!-- =============================================
              SECCIÓN: TESTIMONIOS
              RESPONSABLE: Christian Diaz
-             ARCHIVO CSS: css-team/christian-diaz.css
              ============================================= -->
-        <section id="cd-testimonios">
-            <p
-                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
-                [ Christian Diaz — Testimonios ]<br>Agrega tu HTML aquí · Estilos en css-team/christian-diaz.css
-            </p>
+        <section id="cd-testimonios" class="cd-section">
+
+            <div class="container">
+
+                <div class="cd-header">
+                    <div class="cd-badge">
+                        <i class="fas fa-users"></i>
+                        <span>NUESTROS CLIENTES</span>
+                    </div>
+                    <h2 class="cd-titulo">Enfoque en Nuestros Clientes</h2>
+                    <p class="cd-descripcion">
+                        La satisfacción de nuestros clientes es nuestra mayor motivacion. Esto es lo que dicen sobre NXR
+                        TECH.
+                    </p>
+                </div>
+
+                <div class="cd-grid">
+
+                    <div class="cd-card">
+                        <div class="cd-comilla">“</div>
+
+                        <p class="cd-texto">
+                            NXR TECH me ayudó a equipar mi oficina con laptops de alto rendimiento
+                            a un precio justo. El soporte técnico fue rápido y profesional.
+                            ¡Totalmente recomendados!
+                        </p>
+
+                        <div class="cd-estrellas">★★★★★</div>
+
+                        <div class="cd-autor">
+                            <div class="cd-avatar">PY</div>
+                            <div>
+                                <div class="cd-nombre">Pedro Yarleque</div>
+                                <div class="cd-cargo">Emprendedor Digital</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cd-card">
+                        <div class="cd-comilla">“</div>
+
+                        <p class="cd-texto"> Compré mis accesorios y mi nuevo smartphone aquí. La atención fue
+                            excelente,
+                            me asesoraron muy bien y el producto llegó en perfecto estado.
+                        </p>
+                        <div class="cd-estrellas">★★★★★</div>
+                        <div class="cd-autor">
+                            <div class="cd-avatar">NL</div>
+                            <div>
+                                <div class="cd-nombre">Nikol Lopez</div>
+                                <div class="cd-cargo">Diseñadora Gráfica</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cd-card">
+                        <div class="cd-comilla">“</div>
+                        <p class="cd-texto"> Conseguí la RTX 5090 a buen precio y con garantía real. El equipo
+                            conoce bien sus productos y te orientan sin presionarte. Muy buena experiencia.
+                        </p>
+                        <div class="cd-estrellas">★★★★★</div>
+                        <div class="cd-autor">
+                            <div class="cd-avatar">EA</div>
+                            <div>
+                                <div class="cd-nombre">Edson Asencio</div>
+                                <div class="cd-cargo">Gamer Profesional</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <!-- =============================================
              SECCIÓN: CONTADOR DE LOGROS
              RESPONSABLE: Juan Morales
-             ARCHIVO CSS: css-team/juan-morales.css
              ============================================= -->
         <section id="jm-contador">
-            <p
-                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
-                [ Juan Morales — Contador de Logros ]<br>Agrega tu HTML aquí · Estilos en css-team/juan-morales.css
-            </p>
+            <div class="container">
+
+                <div class="jm-contador-grid">
+
+                    <div class="jm-contador-item">
+                        <span class="jm-contador-numero" data-target="500">0</span>
+                        <p class="jm-contador-label">Clientes Satisfechos +</p>
+                    </div>
+
+                    <div class="jm-contador-item">
+                        <span class="jm-contador-numero" data-target="1200">0</span>
+                        <p class="jm-contador-label">Productos Vendidos +</p>
+                    </div>
+
+                    <div class="jm-contador-item">
+                        <span class="jm-contador-numero" data-target="10">0</span>
+                        <p class="jm-contador-label">Años de Experiencia +</p>
+                    </div>
+
+                    <div class="jm-contador-item">
+                        <span class="jm-contador-numero" data-target="98">0</span>
+                        <p class="jm-contador-label">% de Satisfacción</p>
+                    </div>
+
+                </div>
+
+            </div>
         </section>
 
         <!-- =============================================
              SECCIÓN: NOTICIAS / BLOG
              RESPONSABLE: Xiomara Solis
-             ARCHIVO CSS: css-team/xiomara-solis.css
-             ============================================= -->
+             =============================================. -->
         <section id="xs-noticias">
-            <p
-                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
-                [ Xiomara Solis — Noticias / Blog ]<br>Agrega tu HTML aquí · Estilos en css-team/xiomara-solis.css
-            </p>
+            <div class="container">
+                <div class="xs-header">
+                    <span class="xs-badge">
+                        <i class="fas fa-newspaper"></i> BLOG & NOTICIAS
+                    </span>
+                    <h2>Últimas Noticias</h2>
+                    <p>Mantente al día con las últimas tendencias tecnológicas y novedades de NXR TECH.</p>
+                </div>
+
+                <div class="xs-grid">
+
+                    <!-- CARD 1 -->
+                    <div class="xs-card">
+                        <img src="img/noticia-1.jpg" alt="">
+
+                        <div class="xs-card-content">
+                            <div class="xs-meta">
+                                <span class="xs-categoria">Tecnología</span>
+                                <span class="xs-fecha">08 de Abril, 2026</span>
+                            </div>
+
+                            <h3>Los mejores smartphones del 2026: guía de compra completa</h3>
+                            <p>Analizamos los modelos más destacados del año con sus especificaciones, precios y cuál es
+                                el mejor para ti</p>
+
+                            <a href="#" class="xs-leer-mas">Leer más →</a>
+                        </div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="xs-card">
+                        <img src="img/noticia-2.jpg" alt="">
+
+                        <div class="xs-card-content">
+                            <div class="xs-meta">
+                                <span class="xs-categoria">Accesorios</span>
+                                <span class="xs-fecha">5 de Abril, 2026</span>
+                            </div>
+
+                            <h3>5 accesorios imprescindibles para potenciar tu productividad</h3>
+
+                            <p>Desde teclados mecánicos hasta monitores ultra-wide, estos accesorios cambiarán tu forma
+                                de trabajar.</p>
+
+                            <a href="#" class="xs-leer-mas">Leer más →</a>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="xs-card">
+                        <img src="img/noticia-3.jpg" alt="">
+
+                        <div class="xs-card-content">
+                            <div class="xs-meta">
+                                <span class="xs-categoria">Soporte</span>
+                                <span class="xs-fecha">1 de Abril, 2026</span>
+                            </div>
+
+                            <h3>Cómo extender la vida útil de tu laptop con mantenimiento preventivo</h3>
+
+                            <p>Consejos prácticos de nuestros técnicos especializados para mantener tu equipo en óptimas
+                                condiciones.</p>
+
+                            <a href="#" class="xs-leer-mas">Leer más →</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Botón-->
+                <div class="xs-footer">
+                    <a href="#" class="xs-btn-noticias">Ver todas las noticias →</a>
+                </div>
+
+            </div>
         </section>
 
         <!-- =============================================
@@ -270,11 +429,26 @@
              ARCHIVO CSS: css-team/xiomara-solis.css
              ============================================= -->
         <section id="xs-cta">
-            <p
-                style="text-align:center;padding:60px 20px;color:#888;font-family:monospace;font-size:14px;border:2px dashed #ccc;margin:20px;background:#fff;">
-                [ Xiomara Solis — CTA / Llamada a la Acción ]<br>Agrega tu HTML aquí · Estilos en
-                css-team/xiomara-solis.css
-            </p>
+
+            <div class="xs-cta-contenido">
+
+                <span class="xs-cta-badge">
+                    <i class="fas fa-rocket"></i> ÚNETE A NXR TECH
+                </span>
+
+                <h2>¿Listo para Transformar Tu Negocio?</h2>
+
+                <p>
+                    Contáctanos hoy y descubre cómo NXR TECH puede darte las soluciones tecnológicas
+                    que tu empresa necesita para crecer.
+                </p>
+
+                <div class="xs-cta-botones">
+                    <a href="#" class="btn-primario">Contáctanos ahora →</a>
+                    <a href="#" class="btn-secundario">Ver Productos</a>
+                </div>
+
+            </div>
         </section>
 
     </main>
@@ -289,7 +463,7 @@
             <div class="footer-mapa">
                 <div class="footer-mapa-info">
                     <h4><i class="fas fa-map-marker-alt"></i> Encuéntranos</h4>
-                    <p>Nextech Education Center<br>Lima, Perú<br><br>
+                    <p>Edificio Gerpal, Av Alfredo Benavides 768, Miraflores, Lima<br>Lima, Perú<br><br>
                         <i class="fas fa-clock" style="color:var(--color-acento);margin-right:6px;"></i>Lun - Sab: 9am -
                         7pm<br>
                         <i class="fas fa-phone" style="color:var(--color-acento);margin-right:6px;"></i>+51 999 888 777
