@@ -407,6 +407,43 @@ footer {
 
 .footer-col ul li a:hover { color: var(--color-acento); padding-left: 4px; }
 
+.footer-asociadas {
+    border-top: 1px solid var(--color-borde);
+    padding: 24px 0;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.footer-asociadas-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: var(--color-texto-gris);
+    white-space: nowrap;
+}
+
+.footer-asociadas-lista {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-asociadas-logo {
+    height: 26px;
+    width: auto;
+    opacity: 0.35;
+    transition: var(--transicion);
+}
+
+.footer-asociadas-logo:hover {
+    opacity: 1;
+}
+
 .footer-bottom {
     border-top: 1px solid var(--color-borde);
     padding-top: 28px;
