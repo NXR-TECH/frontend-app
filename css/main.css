@@ -49,7 +49,7 @@
 }
 
 /* NAVBAR */
-header {
+.ep-navbar-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -60,7 +60,7 @@ header {
     background-color: transparent;
 }
 
-header.scrolled {
+header.scrolled .ep-navbar-bar {
     background-color: rgba(13, 13, 13, 0.92);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -72,7 +72,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
 .nav-logo {
