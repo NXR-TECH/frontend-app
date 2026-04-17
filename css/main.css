@@ -72,6 +72,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav-logo {
@@ -89,6 +90,9 @@ nav {
     display: flex;
     gap: 36px;
     align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-links a {
@@ -148,7 +152,11 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .nav-links { display: none; }
+    .nav-links {
+        display: none;
+        position: static;
+        transform: none;
+    }
     .nav-hamburger { display: flex; }
 
     .nav-links.nav-abierto {
@@ -157,6 +165,7 @@ nav {
         position: absolute;
         top: 100%;
         left: 0;
+        transform: none;
         width: 100%;
         background-color: #0d0d0d;
         padding: 8px 0 16px;
@@ -227,6 +236,34 @@ nav {
     z-index: 2;
     width: 100%;
     text-align: center;
+}
+
+.ep-hero-chips {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 28px;
+    animation: fadeInDown 0.7s ease forwards;
+    opacity: 0;
+}
+
+.ep-hero-chips span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--color-texto-gris-claro);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 5px 14px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: var(--transicion);
+}
+
+.ep-hero-chips span:hover {
+    border-color: var(--color-acento);
+    color: var(--color-acento);
+    background: rgba(0, 113, 227, 0.08);
 }
 
 .ep-hero-titulo {
