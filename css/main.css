@@ -113,16 +113,17 @@ nav {
 .nav-links a:hover::after { width: 100%; }
 
 .nav-cta {
-    background-color: var(--color-acento);
-    color: #fff !important;
-    padding: 10px 22px;
+    background-color: transparent;
+    color: var(--color-texto-claro) !important;
+    padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600 !important;
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .nav-cta:hover {
-    background-color: var(--color-acento-hover);
-    box-shadow: 0 0 16px var(--color-acento-glow);
+    border-color: var(--color-acento);
+    color: var(--color-acento) !important;
 }
 
 .nav-cta::after { display: none !important; }
@@ -264,13 +265,27 @@ nav {
 
 @media (max-width: 768px) {
     #ep-hero { background-attachment: scroll; }
-    .ep-hero-titulo { font-size: 2.5rem; }
+    .ep-hero-titulo { font-size: 2.4rem; }
+
+    .ep-hero-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .ep-hero-subtitulo {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .ep-hero-bottom .btn-primario {
+        width: 100%;
+        text-align: center;
+    }
 }
 
-@media (max-width: 600px) {
-    .ep-hero-botones { flex-direction: column; align-items: stretch; }
-    .ep-hero-botones .btn-primario,
-    .ep-hero-botones .btn-secundario { text-align: center; width: 100%; }
+@media (max-width: 480px) {
+    .ep-hero-titulo { font-size: 2rem; }
 }
 
 /* FOOTER */
